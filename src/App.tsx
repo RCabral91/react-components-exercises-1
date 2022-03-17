@@ -1,6 +1,7 @@
 import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q7OnePhrase from './components/Q7OnePhrase';
 
 const App: React.FC = () => {
     return (
@@ -60,7 +61,9 @@ const App: React.FC = () => {
                 <br />
                 Retorno: Oi tudo bem?
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q7OnePhrase fala="fala" malany=" malany" />
+            </div>
 
             <h2 className="fs-6">
                 8. Crie um componente que recebe duas props, uma string e um
