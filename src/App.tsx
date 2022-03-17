@@ -1,6 +1,7 @@
 import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q5FirstChar from './components/Q5FirstChar';
 
 const App: React.FC = () => {
     return (
@@ -40,7 +41,9 @@ const App: React.FC = () => {
                 5. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna a primeira letra dessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q5FirstChar value="teste" />
+            </div>
 
             <h2 className="fs-6">
                 6. Crie um componente que recebe uma prop &quot;value&quot;, do
