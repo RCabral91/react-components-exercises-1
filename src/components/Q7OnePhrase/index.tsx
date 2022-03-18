@@ -1,10 +1,10 @@
 interface IQ7OnePhraseProps {
-    fala: string;
-    malany: string;
+    oi: string;
+    beleza: string;
 }
 
-const Q7OnePhrase: React.FC<IQ7OnePhraseProps> = ({ fala, malany }) => (
-    <>{fala.concat(malany)}</>
+const Q7OnePhrase: React.FC<IQ7OnePhraseProps> = ({ oi, beleza }) => (
+    <>{oi.concat(beleza)}</>
 );
 
 export default Q7OnePhrase;

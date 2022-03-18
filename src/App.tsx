@@ -62,7 +62,7 @@ const App: React.FC = () => {
                 Retorno: Oi tudo bem?
             </h2>
             <div className="card p-3 mb-4">
-                <Q7OnePhrase fala="fala" malany=" malany" />
+                <Q7OnePhrase oi="oi" beleza="beleza" />
             </div>
 
             <h2 className="fs-6">
