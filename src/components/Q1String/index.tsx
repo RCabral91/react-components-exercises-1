@@ -3,6 +3,6 @@ interface IQ1StringProps {
 }
 
 // eslint-disable-next-line react/jsx-no-useless-fragment
-const Q1String: React.FC<IQ1StringProps> = ({ value }) => <>{value}</>;
+const Q1String: React.FC<IQ1StringProps> = ({ value }) => <p>{value}</p>;
 
 export default Q1String;
