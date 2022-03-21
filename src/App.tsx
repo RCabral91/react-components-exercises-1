@@ -97,7 +97,7 @@ const App: React.FC = () => {
                 tiver mais caracteres.
             </h2>
             <div className="card p-3 mb-4">
-                <Q10BiggerText aparicio="aparicio" cabral="cabral" />
+                <Q10BiggerText value="aparicio" value1="cabral" />
             </div>
 
             <h2 className="fs-6">
