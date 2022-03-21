@@ -1,10 +1,10 @@
 interface IQ8RepeatStringProps {
-    oi: string;
-    3?: number;
+    value: string;
+    number: number;
 }
 
-const Q8RepeatString: React.FC<IQ8RepeatStringProps> = ({ oi }) => (
-    <p>{oi.repeat(3)}</p>
+const Q8RepeatString: React.FC<IQ8RepeatStringProps> = ({ value, number }) => (
+    <p>{value.repeat(number)}</p>
 );
 
 export default Q8RepeatString;

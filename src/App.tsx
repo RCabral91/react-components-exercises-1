@@ -79,7 +79,7 @@ const App: React.FC = () => {
                 <br /> Retorno: OiOiOiOiOi
             </h2>
             <div className="card p-3 mb-4">
-                <Q8RepeatString oi="oi" />
+                <Q8RepeatString value="oi" number={3} />
             </div>
 
             <h2 className="fs-6">
