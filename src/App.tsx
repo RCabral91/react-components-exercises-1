@@ -1,4 +1,5 @@
 import './App.css';
+import Q16Sum from './components/Q16Sum';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -160,7 +161,9 @@ const App: React.FC = () => {
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16Sum value={5} value1={3} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
