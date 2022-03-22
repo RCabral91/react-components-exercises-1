@@ -1,6 +1,5 @@
 import './App.css';
 import Q10BiggerText from './components/Q10BiggerText';
-import Q12CharAtPosition from './components/Q12CharAtPosition';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
