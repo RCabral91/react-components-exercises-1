@@ -3,6 +3,7 @@ import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
+import Q9RepeatWithSpace from './components/Q9RepeatWithSpace';
 
 const App: React.FC = () => {
     return (
