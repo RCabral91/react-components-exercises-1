@@ -162,7 +162,7 @@ const App: React.FC = () => {
                 da soma entre eles.
             </h2>
             <div className="card p-3 mb-4">
-                <Q16Sum value={5} value1={3} />
+                <Q16Sum value={5} value1={2} />
             </div>
 
             <h2 className="fs-6">
