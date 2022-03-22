@@ -4,7 +4,7 @@ interface IQ10BiggerTextProps {
 }
 
 const Q10BiggerText: React.FC<IQ10BiggerTextProps> = ({ value, value1 }) => (
-    <>{value.length > value1.length ? 'aparicio' : 'cabral'} </>
+    <>{value.length > value1.length ? value : value1} </>
 );
 
 export default Q10BiggerText;
