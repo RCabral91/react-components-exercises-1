@@ -178,6 +178,9 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q18Multiplication value={5} value1={3} />
+                <Q18Multiplication value={6} value1={0} />
+                <Q18Multiplication value={-5} value1={3} />
+                <Q18Multiplication value={5.3} value1={3.18} />
             </div>
 
             <h2 className="fs-6">

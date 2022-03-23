@@ -6,9 +6,6 @@ interface IQ18MultiplicationProps {
 const Q18Multiplication: React.FC<IQ18MultiplicationProps> = ({
     value,
     value1,
-}) => {
-    const totalMultiplication = value * value1;
-    return <p>{totalMultiplication}</p>;
-};
+}) => <p>{value * value1}</p>;
 
 export default Q18Multiplication;
