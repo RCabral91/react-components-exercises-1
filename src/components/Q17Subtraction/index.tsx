@@ -3,9 +3,8 @@ interface IQ17SubtractionProps {
     value1: number;
 }
 
-const Q17Subtraction: React.FC<IQ17SubtractionProps> = ({ value, value1 }) => {
-    const totalSubtraction = value - value1;
-    return <p>{totalSubtraction}</p>;
-};
+const Q17Subtraction: React.FC<IQ17SubtractionProps> = ({ value, value1 }) => (
+    <p>{value - value1}</p>
+);
 
 export default Q17Subtraction;
