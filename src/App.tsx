@@ -1,9 +1,14 @@
 import './App.css';
+import Q10BiggerText from './components/Q10BiggerText';
+import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q16Sum from './components/Q16Sum';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
+import Q5FirstChar from './components/Q5FirstChar';
+import Q6LastChar from './components/Q6LastChar';
+import Q8RepeatString from './components/Q8RepeatString';
 
 const App: React.FC = () => {
     return (
@@ -47,13 +52,17 @@ const App: React.FC = () => {
                 5. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna a primeira letra dessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q5FirstChar value="teste" />
+            </div>
 
             <h2 className="fs-6">
                 6. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna a última letra dessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q6LastChar value="teste de novo" />
+            </div>
 
             <h2 className="fs-6">
                 7. Crie um componente que recebe duas props do tipo string e
@@ -78,7 +87,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: OiOiOiOiOi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q8RepeatString value="oi" number={3} />
+            </div>
 
             <h2 className="fs-6">
                 9. Crie um componente que recebe duas props, uma string e um
@@ -96,7 +107,9 @@ const App: React.FC = () => {
                 10. Crie um componente que recebe duas strings e retorna a que
                 tiver mais caracteres.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q10BiggerText value="aparicio" value1="cabral" />
+            </div>
 
             <h2 className="fs-6">
                 11. Crie um componente que recebe duas strings e retorna
@@ -144,7 +157,9 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas que loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q14OnlyFirstUpper value="MaS QuE LoUcUrA." />
+            </div>
 
             <h2 className="fs-6">
                 15. Crie um componente que recebe uma string e retorna a
