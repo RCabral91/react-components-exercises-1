@@ -4,7 +4,7 @@ interface IQ25IsPrimeProps {
 
 const Q25IsPrime: React.FC<IQ25IsPrimeProps> = ({ value }) => {
     for (let i = 2; i < value; i += 1) {
-        if (i % 2 === 0) return <p>Não</p>;
+        if (value % i === 0) return <p>Não</p>;
     }
     return <p>Sim</p>;
 };
