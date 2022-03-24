@@ -269,7 +269,12 @@ const App: React.FC = () => {
                 um pacote de ícones)
             </h2>
             <div className="card p-3 mb-4">
+                <Q31StarPoint amount={0} />
+                <Q31StarPoint amount={1} />
                 <Q31StarPoint amount={2} />
+                <Q31StarPoint amount={3} />
+                <Q31StarPoint amount={4} />
+                <Q31StarPoint amount={5} />
             </div>
 
             <h2 className="fs-6">
