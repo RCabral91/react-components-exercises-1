@@ -1,6 +1,8 @@
 import './App.css';
 import Q10BiggerText from './components/Q10BiggerText';
+import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q1String from './components/Q1String';
+import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q28EvenOdd from './components/Q28EvenOdd';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -107,7 +109,7 @@ const App: React.FC = () => {
                 tiver mais caracteres.
             </h2>
             <div className="card p-3 mb-4">
-                <Q10BiggerText aparicio="aparicio" cabral="cabral" />
+                <Q10BiggerText value="aparicio" value1="cabral" />
             </div>
 
             <h2 className="fs-6">
@@ -156,7 +158,9 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas que loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q14OnlyFirstUpper value="MaS QuE LoUcUrA." />
+            </div>
 
             <h2 className="fs-6">
                 15. Crie um componente que recebe uma string e retorna a
@@ -198,7 +202,13 @@ const App: React.FC = () => {
                 20. Crie um componente que recebe um número e retorna o mesmo
                 elevado a 2
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q20ElevatedByTwo value={0} />
+                <Q20ElevatedByTwo value={1} />
+                <Q20ElevatedByTwo value={2} />
+                <Q20ElevatedByTwo value={-2} />
+                <Q20ElevatedByTwo value={2.2} />
+            </div>
 
             <h2 className="fs-6">
                 21. Crie um componente que recebe dois números e retorna o
