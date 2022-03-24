@@ -91,7 +91,7 @@ const App: React.FC = () => {
                 <br /> Retorno: Oi, Oi, Oi, Oi, Oi
             </h2>
             <div className="card p-3 mb-4">
-                <Q9StringWithSpace amount={5} />
+                <Q9StringWithSpace amount={5} value="oi" />
             </div>
 
             <h2 className="fs-6">
