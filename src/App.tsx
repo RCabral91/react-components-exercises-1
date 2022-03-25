@@ -4,6 +4,7 @@ import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q36Button from './components/Q36Button';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -313,7 +314,9 @@ const App: React.FC = () => {
                 botão com o texto de <b>label</b> e a cor de fundo de{' '}
                 <b>color</b>
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q36Button color="red" label="Texto" />
+            </div>
 
             <h2 className="fs-6">
                 37. Crie um componente que tem um input de texto, um botão e uma
