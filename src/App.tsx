@@ -2,7 +2,7 @@ import './App.css';
 import Q10BiggerText from './components/Q10BiggerText';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
-import { Q31StarPoint } from './components/Q31StarPoint';
+import Q31StarPoint from './components/Q31StarPoint';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -269,12 +269,12 @@ const App: React.FC = () => {
                 um pacote de ícones)
             </h2>
             <div className="card p-3 mb-4">
-                <Q31StarPoint amount={0} />
-                <Q31StarPoint amount={1} />
-                <Q31StarPoint amount={2} />
-                <Q31StarPoint amount={3} />
-                <Q31StarPoint amount={4} />
-                <Q31StarPoint amount={5} />
+                <Q31StarPoint score={0} />
+                <Q31StarPoint score={1} />
+                <Q31StarPoint score={2} />
+                <Q31StarPoint score={3} />
+                <Q31StarPoint score={4} />
+                <Q31StarPoint score={5} />
             </div>
 
             <h2 className="fs-6">
