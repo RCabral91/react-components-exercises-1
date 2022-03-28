@@ -1,6 +1,7 @@
 import './App.css';
 import Q10BiggerText from './components/Q10BiggerText';
 import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
+import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q2Uppercase from './components/Q2Uppercase';
@@ -170,7 +171,9 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas Que Loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q15FirstUppercase value="OlHa iSSo MiNHa gEntE" />
+            </div>
 
             <h2 className="fs-6">
                 16. Crie um componente que recebe dois números e retorna o valor
