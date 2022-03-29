@@ -39,7 +39,7 @@ const Q38SumInput: React.FC = () => {
                     Enviar
                 </button>
             </div>
-            <input type="text" className="form-control" value={sum} />
+            <input readOnly className="form-control" value={sum} />
         </>
     );
 };
