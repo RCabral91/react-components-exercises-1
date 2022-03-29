@@ -1,16 +1,21 @@
 import './App.css';
 import Q10BiggerText from './components/Q10BiggerText';
+import Q12LetAndNum from './components/Q12LetAndNum';
 import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q15FirstUppercase from './components/Q15FirstUppercase';
+import Q16Sum from './components/Q16Sum';
 import Q18Multiplication from './components/Q18Multiplicaion';
 import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
+import Q21Elevated from './components/Q21Elevated';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q7OnePhrase from './components/Q7OnePhrase';
 import Q8RepeatString from './components/Q8RepeatString';
+import Q9StringWithSpace from './components/Q9StringWithSpace';
 
 const App: React.FC = () => {
     return (
@@ -78,7 +83,9 @@ const App: React.FC = () => {
                 <br />
                 Retorno: Oi tudo bem?
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q7OnePhrase value1="oi" value2="tudo bem?" />
+            </div>
 
             <h2 className="fs-6">
                 8. Crie um componente que recebe duas props, uma string e um
@@ -103,7 +110,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: Oi, Oi, Oi, Oi, Oi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q9StringWithSpace amount={5} value="oi" />
+            </div>
 
             <h2 className="fs-6">
                 10. Crie um componente que recebe duas strings e retorna a que
@@ -136,7 +145,11 @@ const App: React.FC = () => {
                 <br /> Prop 2: 3
                 <br /> Retorno: c
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q12LetAndNum position={0} word="Rafael" />
+                <Q12LetAndNum position={4} word="Rafael" />
+                <Q12LetAndNum position={10} word="Rafael" />
+            </div>
 
             <h2 className="fs-6">
                 13. Crie um componente que recebe 3 strings. Retorna a primeira
@@ -180,7 +193,9 @@ const App: React.FC = () => {
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16Sum value={5} value1={2} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
@@ -222,7 +237,12 @@ const App: React.FC = () => {
                 21. Crie um componente que recebe dois números e retorna o
                 primeiro elevado pelo segundo
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q21Elevated value={0} value1={0} />
+                <Q21Elevated value={10} value1={0} />
+                <Q21Elevated value={0} value1={10} />
+                <Q21Elevated value={5} value1={5} />
+            </div>
 
             <h2 className="fs-6">
                 22. Crie um componente que recebe dois números e retorna o maior
