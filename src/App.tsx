@@ -9,6 +9,7 @@ import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q31StarPoint from './components/Q31StarPoint';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -304,7 +305,14 @@ const App: React.FC = () => {
                 retorna de 0 a 5 estrelas amarelas e o restante cinzas (utilize
                 um pacote de ícones)
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q31StarPoint score={0} />
+                <Q31StarPoint score={1} />
+                <Q31StarPoint score={2} />
+                <Q31StarPoint score={3} />
+                <Q31StarPoint score={4} />
+                <Q31StarPoint score={5} />
+            </div>
 
             <h2 className="fs-6">
                 32. Crie um componente que recebe (x, width, height, color) e
