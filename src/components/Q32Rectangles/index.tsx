@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useMemo } from 'react';
 
 interface IQ32RectanglesProps {
     x: number;
@@ -13,22 +13,20 @@ const Q32Rectangles: React.FC<IQ32RectanglesProps> = ({
     height,
     color,
 }) => {
-    const rectangleArray = [] as number[];
-
-    const buildRectanglesArray = useCallback(() => {
+    const rectangles = useMemo(() => {
+        const r = [];
         for (let i = 1; i <= x; i += 1) {
-            rectangleArray.push(i);
+            r.push(i);
         }
-    }, [x, width, height, color]);
-
-    buildRectanglesArray();
+        return r;
+    }, [x]);
 
     return (
         <div className="d-flex">
-            {rectangleArray.map(index => (
+            {rectangles.map(index => (
                 <div
                     key={index}
-                    className="m-2"
+                    className="m-3"
                     style={{ height, width, backgroundColor: color }}
                 />
             ))}

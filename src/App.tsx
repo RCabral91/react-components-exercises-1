@@ -4,7 +4,7 @@ import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q2Uppercase from './components/Q2Uppercase';
-import Q32Rectangle from './components/Q32Rectangle';
+import Q32Rectangle from './components/Q32Rectangles';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -287,7 +287,7 @@ const App: React.FC = () => {
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
             <div className="card p-3 mb-4">
-                <Q32Rectangle x={3} width={50} height={30} color="red" />
+                <Q32Rectangle x={5} width={50} height={30} color="red" />
             </div>
 
             <h2 className="fs-6">
