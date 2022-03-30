@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useMemo } from 'react';
 
 interface IQ33CirclesProps {
     x: number;
@@ -7,23 +7,26 @@ interface IQ33CirclesProps {
 }
 
 const Q33Circles: React.FC<IQ33CirclesProps> = ({ x, size, color }) => {
-    const circleArray: number[] = [];
-
-    const buildCirclesArray =
-        (() => {
-            for (let i = 1; i <= x; i += 1) {
-                circleArray.push(i);
-            }
-        },
-        [x]);
+    const circles = useMemo(() => {
+        const c = [];
+        for (let i = 1; i <= x; i += 1) {
+            c.push(i);
+        }
+        return c;
+    }, [x]);
 
     return (
         <div className="d-flex">
-            {circleArray.map(index => (
+            {circles.map(index => (
                 <div
                     key={index}
                     className="m-2"
-                    style={{ backgroundColor: color }}
+                    style={{
+                        height: size,
+                        width: size,
+                        borderRadius: size,
+                        backgroundColor: color,
+                    }}
                 />
             ))}
         </div>
