@@ -5,6 +5,7 @@ import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
+import Q18Multiplication from './components/Q18Multiplicaion';
 import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
@@ -213,7 +214,12 @@ const App: React.FC = () => {
                 18. Crie um componente que recebe dois números e retorna o valor
                 da multiplicação entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q18Multiplication value={5} value1={3} />
+                <Q18Multiplication value={6} value1={0} />
+                <Q18Multiplication value={-5} value1={3} />
+                <Q18Multiplication value={5.3} value1={3.18} />
+            </div>
 
             <h2 className="fs-6">
                 19. Crie um componente que recebe dois números e retorna o valor
