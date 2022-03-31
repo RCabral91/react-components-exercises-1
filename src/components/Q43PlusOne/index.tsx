@@ -8,7 +8,7 @@ const Q43PlusOne: React.FC = () => {
             <span id="count">{plusOne}</span>
 
             <button
-                type="submit"
+                type="button"
                 id="incrementor"
                 onClick={() => setPlusOne(plusOne + 1)}
             >
