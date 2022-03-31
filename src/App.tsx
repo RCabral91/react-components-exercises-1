@@ -288,6 +288,10 @@ const App: React.FC = () => {
             <div className="card p-3 mb-4">
                 <Q28EvenOdd value={10} />
                 <Q28EvenOdd value={11} />
+                <Q28EvenOdd value={0} />
+                <Q28EvenOdd value={-11} />
+                <Q28EvenOdd value={-10} />
+                <Q28EvenOdd value={11.1323} />
             </div>
 
             <h2 className="fs-6">
