@@ -13,6 +13,9 @@ import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q31StarPoint from './components/Q31StarPoint';
+import Q32Rectangles from './components/Q32Rectangles';
+import Q33Circles from './components/Q33Circles';
 <<<<<<< HEAD
 import Q36Button from './components/Q36Button';
 =======
@@ -345,7 +348,7 @@ const App: React.FC = () => {
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
             <div className="card p-3 mb-4">
-                <Q32Rectangle x={5} width={50} height={30} color="red" />
+                <Q32Rectangles x={5} width={50} height={30} color="red" />
             </div>
 
             <h2 className="fs-6">
