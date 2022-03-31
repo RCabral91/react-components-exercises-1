@@ -17,7 +17,7 @@ const Q44ChangeTextColor: React.FC = () => {
                 />
 
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-success mx-2"
                     onClick={() => setColor('green')}
                 >
@@ -25,28 +25,28 @@ const Q44ChangeTextColor: React.FC = () => {
                 </button>
 
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-danger"
                     onClick={() => setColor('red')}
                 >
                     Vermelho
                 </button>
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-warning mx-2"
                     onClick={() => setColor('yellow')}
                 >
                     Amarelo
                 </button>
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-dark"
                     onClick={() => setColor('black')}
                 >
                     Preto
                 </button>
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-primary mx-2"
                     onClick={() => setColor('blue')}
                 >
