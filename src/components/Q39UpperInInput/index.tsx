@@ -19,12 +19,12 @@ const Q39UpperInInput: React.FC = () => {
             <input
                 readOnly
                 className="form-control"
-                value={resultText.toUpperCase()}
+                value={resultText.toLocaleUpperCase()}
             />
 
             <div>
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-primary mb-3"
                     onClick={() => setResultText(text)}
                 >
