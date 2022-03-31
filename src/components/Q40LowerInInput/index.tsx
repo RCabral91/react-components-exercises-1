@@ -19,12 +19,12 @@ const Q40LowerInInput: React.FC = () => {
             <input
                 readOnly
                 className="form-control"
-                value={resultText.toLowerCase()}
+                value={resultText.toLocaleLowerCase()}
             />
 
             <div>
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-primary mb-3"
                     onClick={() => setResultText(text)}
                 >
