@@ -15,6 +15,7 @@ import Q23RandomNumber from './components/Q23RandomNumber';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangle from './components/Q32Rectangles';
+import Q33Circles from './components/Q33Circles';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q42OneMoreLine from './components/Q42OneLineMore';
 import Q4StringLength from './components/Q4StringLength';
@@ -348,7 +349,9 @@ const App: React.FC = () => {
                 círculos de diâmetro definido por <b>size</b> e com cor de fundo
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q33Circles x={2} size={50} color="blue" />
+            </div>
 
             <h2 className="fs-6">
                 34. Crie um componente que recebe um array de objetos (label,
