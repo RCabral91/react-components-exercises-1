@@ -294,8 +294,10 @@ const App: React.FC = () => {
             <div className="card p-3 mb-4">
                 <Q29Percentage value={10} value1={100} />
                 <Q29Percentage value={42} value1={150} />
-                <Q29Percentage value={50} value1={100} />
-                <Q29Percentage value={100} value1={100} />
+                <Q29Percentage value={50} value1={0} />
+                <Q29Percentage value={0} value1={100} />
+                <Q29Percentage value={-10} value1={100} />
+                <Q29Percentage value={10} value1={-100} />
             </div>
 
             <h2 className="fs-6">
