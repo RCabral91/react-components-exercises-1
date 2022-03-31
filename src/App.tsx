@@ -16,13 +16,7 @@ import Q2Uppercase from './components/Q2Uppercase';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
-<<<<<<< HEAD
-import Q36Button from './components/Q36Button';
-=======
-import Q31StarPoint from './components/Q31StarPoint';
-import Q32Rectangle from './components/Q32Rectangles';
-import Q33Circles from './components/Q33Circles';
->>>>>>> master
+import Q38SumInput from './components/Q38SumInput';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q42OneMoreLine from './components/Q42OneLineMore';
 import Q4StringLength from './components/Q4StringLength';
@@ -396,7 +390,9 @@ const App: React.FC = () => {
                 no botão o terceiro input deve receber o resultado da soma dos
                 dois primeiros
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q38SumInput />
+            </div>
 
             <h2 className="fs-6">
                 39. Crie um componente que tem um input de texto, um segundo
