@@ -17,7 +17,7 @@ const Q37ReceiveText: React.FC = () => {
             </div>
             <div>
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-primary mb-3"
                     onClick={() => setResultText(text)}
                 >
