@@ -291,7 +291,10 @@ const App: React.FC = () => {
                 <Q25IsPrime value={1} />
                 <Q25IsPrime value={0} />
                 <Q25IsPrime value={11} />
+                <Q25IsPrime value={3} />
+                <Q25IsPrime value={5} />
                 <Q25IsPrime value={-11} />
+                <Q25IsPrime value={10} />
             </div>
 
             <h2 className="fs-6">
