@@ -4,13 +4,19 @@ import Q12LetAndNum from './components/Q12LetAndNum';
 import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q16Sum from './components/Q16Sum';
+import Q17Subtraction from './components/Q17Subtraction';
+import Q18Multiplication from './components/Q18Multiplicaion';
+import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
+import Q23RandomNumber from './components/Q23RandomNumber';
 import Q25IsPrime from './components/Q25IsPrime';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q31StarPoint from './components/Q31StarPoint';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q42OneMoreLine from './components/Q42OneLineMore';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -202,20 +208,31 @@ const App: React.FC = () => {
                 17. Crie um componente que recebe dois números e retorna o valor
                 da subtração entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q17Subtraction value={5} value1={3} />
+            </div>
 
             <h2 className="fs-6">
                 18. Crie um componente que recebe dois números e retorna o valor
                 da multiplicação entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q18Multiplication value={5} value1={3} />
+                <Q18Multiplication value={6} value1={0} />
+                <Q18Multiplication value={-5} value1={3} />
+                <Q18Multiplication value={5.3} value1={3.18} />
+            </div>
 
             <h2 className="fs-6">
                 19. Crie um componente que recebe dois números e retorna o valor
                 da divisão entre eles. Se o divisor for zero, retorna
                 &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q19Division value={10} value1={10} />
+                <Q19Division value={0} value1={10} />
+                <Q19Division value={10} value1={0} />
+            </div>
 
             <h2 className="fs-6">
                 20. Crie um componente que recebe um número e retorna o mesmo
@@ -253,7 +270,9 @@ const App: React.FC = () => {
                 23. Crie um componente que retorna um número inteiro aleatório
                 entre 0 e 10
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q23RandomNumber />
+            </div>
 
             <h2 className="fs-6">
                 24. Crie um componente que recebe dois números, X e Y, e retorna
@@ -311,7 +330,14 @@ const App: React.FC = () => {
                 retorna de 0 a 5 estrelas amarelas e o restante cinzas (utilize
                 um pacote de ícones)
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q31StarPoint score={0} />
+                <Q31StarPoint score={1} />
+                <Q31StarPoint score={2} />
+                <Q31StarPoint score={3} />
+                <Q31StarPoint score={4} />
+                <Q31StarPoint score={5} />
+            </div>
 
             <h2 className="fs-6">
                 32. Crie um componente que recebe (x, width, height, color) e
@@ -395,7 +421,9 @@ const App: React.FC = () => {
                 texto do input deve ser adicionado uma linha abaixo do texto
                 adicionado anteriormente
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q42OneMoreLine />
+            </div>
 
             <h2 className="fs-6">
                 43. Crie um componente que tem um <b>span</b> com o número zero
