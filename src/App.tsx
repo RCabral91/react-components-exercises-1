@@ -20,6 +20,7 @@ import Q36Button from './components/Q36Button';
 import Q38SumInput from './components/Q38SumInput';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q42OneMoreLine from './components/Q42OneLineMore';
+import Q47DolToReal from './components/Q47DolToReal';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -477,7 +478,9 @@ const App: React.FC = () => {
                 input convertido para reais. Deve exibir um loading enquanto
                 busca
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q47DolToReal />
+            </div>
 
             <h2 className="fs-6">
                 48. Crie um componente que tem um span vazio e um botão, ao
