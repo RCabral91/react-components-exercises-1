@@ -17,17 +17,15 @@ interface IQ26ReturnXPrimesProps {
 const Q26ReturnXPrimes: React.FC<IQ26ReturnXPrimesProps> = ({ value }) => {
     const primes = [];
     let findPrime = 0;
-    let countPrime = 0;
 
-    while (countPrime < value) {
+    while (primes.length < value) {
         findPrime += 1;
         if (isPrime(findPrime)) {
             primes.push(findPrime);
-            countPrime += 1;
         }
     }
 
-    return <span>{primes}</span>;
+    return <span>{primes.join(', ')}</span>;
 };
 
 export default Q26ReturnXPrimes;
