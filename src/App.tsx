@@ -12,6 +12,7 @@ import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
+import Q26ReturnXPrimes from './components/Q26ReturnXPrimes';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
@@ -295,7 +296,13 @@ const App: React.FC = () => {
                 26. Crie um componente que recebe um número X e retorna os
                 primeiros X números primos
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q26ReturnXPrimes value={0} />
+                <Q26ReturnXPrimes value={1} />
+                <Q26ReturnXPrimes value={2} />
+                <Q26ReturnXPrimes value={-2} />
+                <Q26ReturnXPrimes value={3} />
+            </div>
 
             <h2 className="fs-6">
                 27. Crie um componente que recebe um número X e retorna o seu
