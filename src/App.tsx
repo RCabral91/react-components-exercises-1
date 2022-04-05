@@ -19,6 +19,7 @@ import Q33Circles from './components/Q33Circles';
 import Q36Button from './components/Q36Button';
 import Q38SumInput from './components/Q38SumInput';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q41Maps from './components/Q41Maps';
 import Q42OneMoreLine from './components/Q42OneLineMore';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -418,7 +419,9 @@ const App: React.FC = () => {
                 deve exibir um &quot;Pin&quot; e ser recentralizado nessas
                 coordenadas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q41Maps />
+            </div>
 
             <h2 className="fs-6">
                 42. Crie um componente que tem um input de texto e um botão
