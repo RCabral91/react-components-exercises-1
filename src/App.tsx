@@ -14,6 +14,7 @@ import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q25IsPrime from './components/Q25IsPrime';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q30RepeatSameNumber from './components/Q30RepeatSameNumber';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
@@ -331,7 +332,18 @@ const App: React.FC = () => {
                 número de quantas vezes esse número aparece em uma contagem de
                 de 0 a 100
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q30RepeatSameNumber value={0} />
+                <Q30RepeatSameNumber value={1} />
+                <Q30RepeatSameNumber value={2} />
+                <Q30RepeatSameNumber value={3} />
+                <Q30RepeatSameNumber value={4} />
+                <Q30RepeatSameNumber value={5} />
+                <Q30RepeatSameNumber value={6} />
+                <Q30RepeatSameNumber value={7} />
+                <Q30RepeatSameNumber value={8} />
+                <Q30RepeatSameNumber value={9} />
+            </div>
 
             <h2 className="fs-6">
                 31. Crie um componente que recebe uma pontuação de 0 a 5 e
