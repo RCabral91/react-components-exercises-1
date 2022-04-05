@@ -12,6 +12,7 @@ import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
+import Q25IsPrime from './components/Q25IsPrime';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
@@ -289,7 +290,16 @@ const App: React.FC = () => {
                 &quot;Sim&quot; se ele for primo. Caso contrário, retorna
                 &quot;Não&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q25IsPrime value={90} />
+                <Q25IsPrime value={1} />
+                <Q25IsPrime value={0} />
+                <Q25IsPrime value={11} />
+                <Q25IsPrime value={3} />
+                <Q25IsPrime value={5} />
+                <Q25IsPrime value={-11} />
+                <Q25IsPrime value={10} />
+            </div>
 
             <h2 className="fs-6">
                 26. Crie um componente que recebe um número X e retorna os
