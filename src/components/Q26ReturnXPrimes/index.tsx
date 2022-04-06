@@ -1,3 +1,5 @@
+import { useMemo } from 'react';
+
 const isPrime = (num: number): boolean => {
     if (num < 2) {
         return false;
@@ -15,15 +17,18 @@ interface IQ26ReturnXPrimesProps {
 }
 
 const Q26ReturnXPrimes: React.FC<IQ26ReturnXPrimesProps> = ({ value }) => {
-    const primes = [];
-    let findPrime = 0;
+    const primes = useMemo(() => {
+        const primeArray = [];
+        let findPrime = 0;
 
-    while (primes.length < value) {
-        findPrime += 1;
-        if (isPrime(findPrime)) {
-            primes.push(findPrime);
+        while (primeArray.length < value) {
+            findPrime += 1;
+            if (isPrime(findPrime)) {
+                primeArray.push(findPrime);
+            }
         }
-    }
+        return [primeArray];
+    }, [value]);
 
     return <span>{primes.join(', ')}</span>;
 };
