@@ -1,17 +1,36 @@
 import './App.css';
 import Q10BiggerText from './components/Q10BiggerText';
+import Q12LetAndNum from './components/Q12LetAndNum';
 import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
 import Q15FirstUppercase from './components/Q15FirstUppercase';
+import Q16Sum from './components/Q16Sum';
+import Q17Subtraction from './components/Q17Subtraction';
+import Q18Multiplication from './components/Q18Multiplicaion';
+import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
+import Q22BiggerNumber from './components/Q22BiggerNumber';
+import Q23RandomNumber from './components/Q23RandomNumber';
+import Q25IsPrime from './components/Q25IsPrime';
+import Q28EvenOdd from './components/Q28EvenOdd';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q30RepeatSameNumber from './components/Q30RepeatSameNumber';
+import Q31StarPoint from './components/Q31StarPoint';
+import Q32Rectangles from './components/Q32Rectangles';
+import Q33Circles from './components/Q33Circles';
+import Q36Button from './components/Q36Button';
 import Q37ReceiveText from './components/Q37ReceiveText';
+import Q38SumInput from './components/Q38SumInput';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q42OneMoreLine from './components/Q42OneLineMore';
+import Q46Cep from './components/Q46Cep';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q7OnePhrase from './components/Q7OnePhrase';
 import Q8RepeatString from './components/Q8RepeatString';
+import Q9StringWithSpace from './components/Q9StringWithSpace';
 
 const App: React.FC = () => {
     return (
@@ -79,7 +98,9 @@ const App: React.FC = () => {
                 <br />
                 Retorno: Oi tudo bem?
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q7OnePhrase value1="oi" value2="tudo bem?" />
+            </div>
 
             <h2 className="fs-6">
                 8. Crie um componente que recebe duas props, uma string e um
@@ -104,7 +125,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: Oi, Oi, Oi, Oi, Oi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q9StringWithSpace amount={5} value="oi" />
+            </div>
 
             <h2 className="fs-6">
                 10. Crie um componente que recebe duas strings e retorna a que
@@ -137,7 +160,11 @@ const App: React.FC = () => {
                 <br /> Prop 2: 3
                 <br /> Retorno: c
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q12LetAndNum position={0} word="Rafael" />
+                <Q12LetAndNum position={4} word="Rafael" />
+                <Q12LetAndNum position={10} word="Rafael" />
+            </div>
 
             <h2 className="fs-6">
                 13. Crie um componente que recebe 3 strings. Retorna a primeira
@@ -181,26 +208,39 @@ const App: React.FC = () => {
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16Sum value={5} value1={2} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
                 da subtração entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q17Subtraction value={5} value1={3} />
+            </div>
 
             <h2 className="fs-6">
                 18. Crie um componente que recebe dois números e retorna o valor
                 da multiplicação entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q18Multiplication value={5} value1={3} />
+                <Q18Multiplication value={6} value1={0} />
+                <Q18Multiplication value={-5} value1={3} />
+                <Q18Multiplication value={5.3} value1={3.18} />
+            </div>
 
             <h2 className="fs-6">
                 19. Crie um componente que recebe dois números e retorna o valor
                 da divisão entre eles. Se o divisor for zero, retorna
                 &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q19Division value={10} value1={10} />
+                <Q19Division value={0} value1={10} />
+                <Q19Division value={10} value1={0} />
+            </div>
 
             <h2 className="fs-6">
                 20. Crie um componente que recebe um número e retorna o mesmo
@@ -229,13 +269,18 @@ const App: React.FC = () => {
                 22. Crie um componente que recebe dois números e retorna o maior
                 entre eles
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q22BiggerNumber value={10} value1={8} />
+                <Q22BiggerNumber value={10} value1={18} />
+            </div>
 
             <h2 className="fs-6">
                 23. Crie um componente que retorna um número inteiro aleatório
                 entre 0 e 10
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q23RandomNumber />
+            </div>
 
             <h2 className="fs-6">
                 24. Crie um componente que recebe dois números, X e Y, e retorna
@@ -249,7 +294,16 @@ const App: React.FC = () => {
                 &quot;Sim&quot; se ele for primo. Caso contrário, retorna
                 &quot;Não&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q25IsPrime value={90} />
+                <Q25IsPrime value={1} />
+                <Q25IsPrime value={0} />
+                <Q25IsPrime value={11} />
+                <Q25IsPrime value={3} />
+                <Q25IsPrime value={5} />
+                <Q25IsPrime value={-11} />
+                <Q25IsPrime value={10} />
+            </div>
 
             <h2 className="fs-6">
                 26. Crie um componente que recebe um número X e retorna os
@@ -267,7 +321,14 @@ const App: React.FC = () => {
                 28. Crie um componente que recebe um número X e retorna se ele é
                 &quot;Par&quot; ou &quot;Ímpar&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q28EvenOdd value={10} />
+                <Q28EvenOdd value={11} />
+                <Q28EvenOdd value={0} />
+                <Q28EvenOdd value={-11} />
+                <Q28EvenOdd value={-10} />
+                <Q28EvenOdd value={11.1323} />
+            </div>
 
             <h2 className="fs-6">
                 29. Crie um componente que recebe dois números, X e Y, retorna
@@ -280,14 +341,32 @@ const App: React.FC = () => {
                 número de quantas vezes esse número aparece em uma contagem de
                 de 0 a 100
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q30RepeatSameNumber value={0} />
+                <Q30RepeatSameNumber value={1} />
+                <Q30RepeatSameNumber value={2} />
+                <Q30RepeatSameNumber value={3} />
+                <Q30RepeatSameNumber value={4} />
+                <Q30RepeatSameNumber value={5} />
+                <Q30RepeatSameNumber value={6} />
+                <Q30RepeatSameNumber value={7} />
+                <Q30RepeatSameNumber value={8} />
+                <Q30RepeatSameNumber value={9} />
+            </div>
 
             <h2 className="fs-6">
                 31. Crie um componente que recebe uma pontuação de 0 a 5 e
                 retorna de 0 a 5 estrelas amarelas e o restante cinzas (utilize
                 um pacote de ícones)
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q31StarPoint score={0} />
+                <Q31StarPoint score={1} />
+                <Q31StarPoint score={2} />
+                <Q31StarPoint score={3} />
+                <Q31StarPoint score={4} />
+                <Q31StarPoint score={5} />
+            </div>
 
             <h2 className="fs-6">
                 32. Crie um componente que recebe (x, width, height, color) e
@@ -295,14 +374,18 @@ const App: React.FC = () => {
                 <b>width</b> e <b>height</b> respectivamente, e com cor de fundo
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q32Rectangles x={5} width={50} height={30} color="red" />
+            </div>
 
             <h2 className="fs-6">
                 33. Crie um componente que recebe (x, size, color) e retorna X
                 círculos de diâmetro definido por <b>size</b> e com cor de fundo
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q33Circles x={2} size={50} color="blue" />
+            </div>
 
             <h2 className="fs-6">
                 34. Crie um componente que recebe um array de objetos (label,
@@ -323,7 +406,9 @@ const App: React.FC = () => {
                 botão com o texto de <b>label</b> e a cor de fundo de{' '}
                 <b>color</b>
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q36Button color="red" label="Texto" />
+            </div>
 
             <h2 className="fs-6">
                 37. Crie um componente que tem um input de texto, um botão e uma
@@ -340,7 +425,9 @@ const App: React.FC = () => {
                 no botão o terceiro input deve receber o resultado da soma dos
                 dois primeiros
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q38SumInput />
+            </div>
 
             <h2 className="fs-6">
                 39. Crie um componente que tem um input de texto, um segundo
@@ -373,7 +460,9 @@ const App: React.FC = () => {
                 texto do input deve ser adicionado uma linha abaixo do texto
                 adicionado anteriormente
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q42OneMoreLine />
+            </div>
 
             <h2 className="fs-6">
                 43. Crie um componente que tem um <b>span</b> com o número zero
@@ -411,7 +500,9 @@ const App: React.FC = () => {
                 Obs: Deve ser exibido um ícone de loading enquanto a API estiver
                 buscando o CEP
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q46Cep />
+            </div>
 
             <h2 className="fs-6">
                 47. Crie um componente que tem um input de número (dólares), um
