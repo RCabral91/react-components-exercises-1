@@ -1,4 +1,13 @@
 import './App.css';
+import Q1String from './components/Q1String';
+import Q2Uppercase from './components/Q2Uppercase';
+import Q3Lowercase from './components/Q3Lowercase';
+import Q4StringLength from './components/Q4StringLength';
+import Q5FirstChar from './components/Q5FirstChar';
+import Q6LastChar from './components/Q6LastChar';
+import Q7OnePhrase from './components/Q7OnePhrase';
+import Q8RepeatString from './components/Q8RepeatString';
+import Q9StringWithSpace from './components/Q9StringWithSpace';
 import Q10BiggerText from './components/Q10BiggerText';
 import Q12LetAndNum from './components/Q12LetAndNum';
 import Q14OnlyFirstUpper from './components/Q14OnlyFirstUpper';
@@ -7,26 +16,17 @@ import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplicaion';
 import Q19Division from './components/Q19Division';
-import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
-import Q2Uppercase from './components/Q2Uppercase';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
 import Q35ImagesToReturn from './components/Q35ImagesToReturn';
 import Q36Button from './components/Q36Button';
 import Q38SumInput from './components/Q38SumInput';
-import Q3Lowercase from './components/Q3Lowercase';
 import Q42OneMoreLine from './components/Q42OneLineMore';
-import Q4StringLength from './components/Q4StringLength';
-import Q5FirstChar from './components/Q5FirstChar';
-import Q6LastChar from './components/Q6LastChar';
-import Q7OnePhrase from './components/Q7OnePhrase';
-import Q8RepeatString from './components/Q8RepeatString';
-import Q9StringWithSpace from './components/Q9StringWithSpace';
 
 const App: React.FC = () => {
     return (
@@ -370,7 +370,7 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q35ImagesToReturn
-                    urls={[
+                    images={[
                         'https://picsum.photos/200/300',
                         'https://picsum.photos/200/300',
                         'https://picsum.photos/200/300',
