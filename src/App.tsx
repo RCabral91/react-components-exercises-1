@@ -19,6 +19,7 @@ import Q30RepeatSameNumber from './components/Q30RepeatSameNumber';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
+import Q35ImagesToReturn from './components/Q35ImagesToReturn';
 import Q36Button from './components/Q36Button';
 import Q38SumInput from './components/Q38SumInput';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -398,7 +399,16 @@ const App: React.FC = () => {
                 uma segunda prop <b>size</b> e retorna essas imagens em formato
                 quadrado do tamanho de <b>size</b>, lado a lado
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q35ImagesToReturn
+                    urls={[
+                        'https://picsum.photos/200/300',
+                        'https://picsum.photos/200/300',
+                        'https://picsum.photos/200/300',
+                    ]}
+                    size={160}
+                />
+            </div>
 
             <h2 className="fs-6">
                 36. Crie um componente que recebe (label, color) e retorne um
