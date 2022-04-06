@@ -20,6 +20,7 @@ import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
 import Q36Button from './components/Q36Button';
+import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q42OneMoreLine from './components/Q42OneLineMore';
@@ -414,7 +415,9 @@ const App: React.FC = () => {
                 div vazia. Ao clicar no botão, a div deve receber o texto que
                 estiver escrito no input
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q37ReceiveText />
+            </div>
 
             <h2 className="fs-6">
                 38. Crie um componente que tem 2 inputs de número, um terceiro
