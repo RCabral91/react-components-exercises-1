@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Q40LowerInInput: React.FC = () => {
+const Q39UpperInInput: React.FC = () => {
     const [text, setText] = useState('');
     const [resultText, setResultText] = useState('');
 
@@ -19,7 +19,7 @@ const Q40LowerInInput: React.FC = () => {
             <input
                 readOnly
                 className="form-control"
-                value={resultText.toLocaleLowerCase()}
+                value={resultText.toLocaleUpperCase()}
             />
 
             <div>
@@ -35,4 +35,4 @@ const Q40LowerInInput: React.FC = () => {
     );
 };
 
-export default Q40LowerInInput;
+export default Q39UpperInInput;

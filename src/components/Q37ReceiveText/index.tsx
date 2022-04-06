@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Q40LowerInInput: React.FC = () => {
+const Q37ReceiveText: React.FC = () => {
     const [text, setText] = useState('');
     const [resultText, setResultText] = useState('');
 
@@ -15,13 +15,6 @@ const Q40LowerInInput: React.FC = () => {
                     onChange={event => setText(event.target.value)}
                 />
             </div>
-
-            <input
-                readOnly
-                className="form-control"
-                value={resultText.toLocaleLowerCase()}
-            />
-
             <div>
                 <button
                     type="button"
@@ -31,8 +24,9 @@ const Q40LowerInInput: React.FC = () => {
                     Enviar
                 </button>
             </div>
+            <div>{resultText}</div>
         </>
     );
 };
 
-export default Q40LowerInInput;
+export default Q37ReceiveText;
