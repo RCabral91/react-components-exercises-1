@@ -12,14 +12,22 @@ import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
+import Q25IsPrime from './components/Q25IsPrime';
+import Q28EvenOdd from './components/Q28EvenOdd';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q30RepeatSameNumber from './components/Q30RepeatSameNumber';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
 import Q36Button from './components/Q36Button';
+import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
+import Q39UpperInInput from './components/Q39UpperInInput';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q40LowerInInput from './components/Q40LowerInInput';
 import Q42OneMoreLine from './components/Q42OneLineMore';
+import Q44ChangeTextColor from './components/Q44ChangeTextColor';
+import Q46Cep from './components/Q46Cep';
 import Q48Advice from './components/Q48Advice';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -290,7 +298,16 @@ const App: React.FC = () => {
                 &quot;Sim&quot; se ele for primo. Caso contrário, retorna
                 &quot;Não&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q25IsPrime value={90} />
+                <Q25IsPrime value={1} />
+                <Q25IsPrime value={0} />
+                <Q25IsPrime value={11} />
+                <Q25IsPrime value={3} />
+                <Q25IsPrime value={5} />
+                <Q25IsPrime value={-11} />
+                <Q25IsPrime value={10} />
+            </div>
 
             <h2 className="fs-6">
                 26. Crie um componente que recebe um número X e retorna os
@@ -308,7 +325,14 @@ const App: React.FC = () => {
                 28. Crie um componente que recebe um número X e retorna se ele é
                 &quot;Par&quot; ou &quot;Ímpar&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q28EvenOdd value={10} />
+                <Q28EvenOdd value={11} />
+                <Q28EvenOdd value={0} />
+                <Q28EvenOdd value={-11} />
+                <Q28EvenOdd value={-10} />
+                <Q28EvenOdd value={11.1323} />
+            </div>
 
             <h2 className="fs-6">
                 29. Crie um componente que recebe dois números, X e Y, retorna
@@ -321,7 +345,18 @@ const App: React.FC = () => {
                 número de quantas vezes esse número aparece em uma contagem de
                 de 0 a 100
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q30RepeatSameNumber value={0} />
+                <Q30RepeatSameNumber value={1} />
+                <Q30RepeatSameNumber value={2} />
+                <Q30RepeatSameNumber value={3} />
+                <Q30RepeatSameNumber value={4} />
+                <Q30RepeatSameNumber value={5} />
+                <Q30RepeatSameNumber value={6} />
+                <Q30RepeatSameNumber value={7} />
+                <Q30RepeatSameNumber value={8} />
+                <Q30RepeatSameNumber value={9} />
+            </div>
 
             <h2 className="fs-6">
                 31. Crie um componente que recebe uma pontuação de 0 a 5 e
@@ -384,7 +419,9 @@ const App: React.FC = () => {
                 div vazia. Ao clicar no botão, a div deve receber o texto que
                 estiver escrito no input
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q37ReceiveText />
+            </div>
 
             <h2 className="fs-6">
                 38. Crie um componente que tem 2 inputs de número, um terceiro
@@ -402,7 +439,9 @@ const App: React.FC = () => {
                 no botão o segundo input deve receber o valor do primeiro,
                 convertido para letras maiúsculas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q39UpperInInput />
+            </div>
 
             <h2 className="fs-6">
                 40. Crie um componente que tem um input de texto, um segundo
@@ -410,7 +449,9 @@ const App: React.FC = () => {
                 no botão o segundo input deve receber o valor do primeiro,
                 convertido para letras maiúsculas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q40LowerInInput />
+            </div>
 
             <h2 className="fs-6">
                 41. Crie um componente que tem um mapa do Google Maps, 2 inputs
@@ -446,7 +487,9 @@ const App: React.FC = () => {
                 qualquer botão, deve-se alterar a cor do texto que está dentro
                 do span
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q44ChangeTextColor />
+            </div>
 
             <h2 className="fs-6">
                 45. Crie um componente que tem um <b>span</b> vazio, um input de
@@ -467,7 +510,9 @@ const App: React.FC = () => {
                 Obs: Deve ser exibido um ícone de loading enquanto a API estiver
                 buscando o CEP
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q46Cep />
+            </div>
 
             <h2 className="fs-6">
                 47. Crie um componente que tem um input de número (dólares), um
