@@ -13,6 +13,7 @@ import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q25IsPrime from './components/Q25IsPrime';
+import Q28EvenOdd from './components/Q28EvenOdd';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q30RepeatSameNumber from './components/Q30RepeatSameNumber';
 import Q31StarPoint from './components/Q31StarPoint';
@@ -319,7 +320,14 @@ const App: React.FC = () => {
                 28. Crie um componente que recebe um número X e retorna se ele é
                 &quot;Par&quot; ou &quot;Ímpar&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q28EvenOdd value={10} />
+                <Q28EvenOdd value={11} />
+                <Q28EvenOdd value={0} />
+                <Q28EvenOdd value={-11} />
+                <Q28EvenOdd value={-10} />
+                <Q28EvenOdd value={11.1323} />
+            </div>
 
             <h2 className="fs-6">
                 29. Crie um componente que recebe dois números, X e Y, retorna
