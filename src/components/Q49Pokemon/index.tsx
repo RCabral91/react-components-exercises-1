@@ -12,7 +12,6 @@ const Q49Pokemon: React.FC = () => {
         try {
             setIsLoading(true);
             const response = await api.get(`/${pokemon}`);
-            // eslint-disable-next-line camelcase
             const { front_default: frontDefault } = response.data.sprites;
             setPokemonPic(frontDefault);
         } catch {
