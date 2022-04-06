@@ -22,6 +22,7 @@ import Q33Circles from './components/Q33Circles';
 import Q36Button from './components/Q36Button';
 import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
+import Q39UpperInInput from './components/Q39UpperInInput';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q42OneMoreLine from './components/Q42OneLineMore';
 import Q46Cep from './components/Q46Cep';
@@ -435,7 +436,9 @@ const App: React.FC = () => {
                 no botão o segundo input deve receber o valor do primeiro,
                 convertido para letras maiúsculas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q39UpperInInput />
+            </div>
 
             <h2 className="fs-6">
                 40. Crie um componente que tem um input de texto, um segundo
