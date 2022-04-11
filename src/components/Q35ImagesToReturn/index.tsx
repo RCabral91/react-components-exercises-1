@@ -1,27 +1,26 @@
-interface IQ35ImagesToReturnProps {
+interface IQ35ReturnImagesProps {
     images: string[];
     size: number;
 }
 
-const Q35ImagesToReturn: React.FC<IQ35ImagesToReturnProps> = ({
-    images,
-    size,
-}) => {
+const Q35ReturnImages: React.FC<IQ35ReturnImagesProps> = ({ images, size }) => {
     return (
         <div className="d-flex">
             {images.map(image => (
-                <div>
-                    <img
-                        className="m-3"
-                        height={size}
-                        width={size}
-                        src={image}
-                        alt="foto"
-                    />
-                </div>
+                <div
+                    key={image}
+                    className=" m-3"
+                    style={{
+                        width: size,
+                        height: size,
+                        backgroundImage: `url(${image})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center center',
+                    }}
+                />
             ))}
         </div>
     );
 };
 
-export default Q35ImagesToReturn;
+export default Q35ReturnImages;
