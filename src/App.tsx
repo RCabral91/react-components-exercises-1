@@ -19,6 +19,7 @@ import Q30RepeatSameNumber from './components/Q30RepeatSameNumber';
 import Q31StarPoint from './components/Q31StarPoint';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
+import Q34UrlLinks from './components/Q34UrlLinks';
 import Q36Button from './components/Q36Button';
 import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
@@ -390,13 +391,23 @@ const App: React.FC = () => {
             <div className="card p-3 mb-4">
                 <Q33Circles x={2} size={50} color="blue" />
             </div>
-
             <h2 className="fs-6">
                 34. Crie um componente que recebe um array de objetos (label,
                 url) e retorna uma lista de links externos que apontem para{' '}
                 <b>url</b> e que sejam descritos por <b>label</b>
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q34UrlLinks
+                    oneArray={[
+                        { url: 'https://www.youtube.com/', label: 'YouTube' },
+                        { url: 'https://www.facebook.com/', label: 'Facebook' },
+                        {
+                            url: 'https://www.instagram.com/',
+                            label: 'Instagram',
+                        },
+                    ]}
+                />
+            </div>
 
             <h2 className="fs-6">
                 35. Crie um componente que recebe um array de urls de imagens,
